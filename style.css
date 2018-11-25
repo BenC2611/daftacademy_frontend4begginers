@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #25072e;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+    text-align: right;
+}
+
+.content-section {
+    min-height: 100vh;
+    margin-bottom: 128px;           
+}
+
+.content-section__header {
+    color: #ec008c;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    margin: 64px 0;
+}
+
+.button {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    color: rgba(209, 205, 255, 0.7);
+    background-color:  rgb(50, 15, 61);
+    padding: 12px 8px;
+    margin-top: 8px;
+    border: 1px solid rgb(50, 15, 61);
+    border-radius: 8%;
+}
+/* -----------------------------------MENU------------------------------ */
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.page-navigation__items {
+    list-style: none;    
+}
+
+.page-navitagion__item > a {
+     color: #ec008c;
+     text-decoration: none;
+     font-size: 13px;
+     font-weight: bold;
+     letter-spacing: 6.7px;
+}
+/* -----------------------------------MUZYCY------------------------------ */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.band-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.band-members__name {
+    color: #ccc8ff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3.8px;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.band-members__desc {
+    color: #ccc8ff;
+    opacity: 0.5;
+    letter-spacing: 3.8px;
+    font-size: 13px;
+}
+
+/* -----------------------------------ABOUT------------------------------ */
+
+.about-section__desc {
+    width: 380px;
+    height: 380px;
+    background-color: rgb(50, 15, 61);
+    border-bottom: 2px solid #ec008c;
+    text-align: center;
+    padding: 32px;
+    position: relative;
+    bottom: 280px;
+    left: 11%;
+}
+
+/* CZEMU BOTTOM NIE MOŻE MIEĆ PROCENTÓW, A LEFT MOŻE? */
+
+.about-section__desc-header__title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #d8d8fb;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+    padding-bottom: 16px;
+}
+
+.about-section__desc-header {
+    font-size: 13px;
+    color: #ccc8ff;
+    opacity: 0.5;
+    letter-spacing: 1.5px;
+}
+
+/* -----------------------------------CONCERTS------------------------------ */
+.concerts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.concerts__item {
+    width: 48%;
+}
+
+.concerts__image {
+    width: 100%;
+    border-bottom: 2px solid #ec008c;
+}
+
+.concerts__info {
+    padding: 8px;
+    margin: 4px;
+}
+
+.concerts__date {
+    font-size: 15px;
+    font-weight: bold;
+    color: #d8d8fb;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+}
+
+.concerts__location {
+    font-size: 13px;
+    color: #ccc8ff;
+    opacity: 0.5;
+    letter-spacing: 3.5px;
+}
+/* -----------------------------------VIDEO------------------------------ */
+
+iframe {
+    width: 1000px;
+}
+
+/* -----------------------------------PHOTOS------------------------------ */
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    width: 32%;
+}
+
+.gallery__image {
+    width: 100%;
+    margin: 8px;
+    border-top: 2px solid #ec008c;
+}
+
+/* -----------------------------------CONTACT------------------------------ */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+}
+
+#contact > h2 {
+    width: 100%;
+}
+
+.contact__image {
+    width: 60%;
+}
+
+address {
+    padding: 16px;
+}
+
+address, .form__label {
+    font-size: 13px;
+    color: #ccc8ff;
+    opacity: 0.5;
+    letter-spacing: 1.5px;
+}
+
+.form {
+    width: 100%;
+    margin: 8px 0 16px 128px;
+    text-align: left;
+}
+/* -----------------------------------FOOTER------------------------------ */
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.social-links {
+    list-style: none;
+}
